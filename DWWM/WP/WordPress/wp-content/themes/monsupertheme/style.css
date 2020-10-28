@@ -1,0 +1,68 @@
+/*
+Theme Name: Mon Super Thème
+Description: Le thème de Guillaume
+Version: 0.5
+Author: Guillaume
+Theme URI: https://lesdocs.fr
+*/
+
+body{
+    font-family: 'arial', sans-serif;
+    color:#333; /*couleur texte*/
+    margin : 0; /*car 8 par défaut*/
+}
+
+.titrelogo{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+}
+main{
+    width: 1000px; /*restriction du modéle de page*/
+    margin-left:auto; /*pour l'alignement*/
+    margin-right:auto; /*pour l'alignement*/
+
+}
+
+main#accueil{
+    display: flex; /*pour que juste sur page d'accueil et non article eux même soit en display flex*/
+    justify-content: space-between;
+    flex-wrap: wrap; /*evite de compresser les articles sur 1 même ligne ici les affiches 3 par 3*/
+}
+
+footer{
+    margin-top: 20px; /*surelevement du footer*/
+    background-color: #eee; /*couleur arriere plan en gris leger*/
+    padding :20px; /*marge interieur*/
+}
+
+div[class^="menu-"]{/*selecteur css pour la div de l'arribut class commençant par menu- grace a ^*/
+    background-color: #eee; /*couleur arriere plan en gris leger*/
+    padding :20px; /*marge interieur*/
+}     
+
+.menu .menu-item{
+    list-style-type: none; /*enléve les puces*/
+    display :inline-block; /*aligne les élements*/
+    margin-right:20px;
+
+}
+
+.menu, footer p, body > h1{
+    padding:0;
+    width:1000px; /*alignement avec le main*/
+    margin-right:auto; /*alignement avec le main*/
+    margin-left:auto; /*alignement avec le main*/
+}
+
+.menu .menu-item a, main article a {
+    text-decoration:none; /*enléve la couleur des liens*/
+    color: #333;
+}
+.menu .menu-item a:hover, main article a:hover {   /*pour indiquer qu'un lien existe pour l'utilisateur*/
+    text-decoration:underline;
+}
+article{
+        width: 300px; /*largueur du texte des articles*/
+        margin-bottom:20px; /*pour espacer les articles*/
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr"> <!--indique la langue dans laquelle la page web est rédigéé aux robots de référencement ou aux logiciels de synthése vocale-->
+<!--les balises de la partie head ne sont pas affichées à l'exeption de title-->
+<head>
+    <!--meta permet de fourni des indications différentes du contenu de la page web -->
+    <meta charset="UTF-8"><!--permet de spécifier aux navigateurs l'encodage de la page web, il s'agit là de la valeur standard qui évite les pbs d'affichages des caractères spéciaux-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Index</title> <!--apparaît dans l'onglet du navigateur et dans moteur de recherche-->
+</head>
+<!--body est le contenu réel de la page-->
+<body>
+    <div> <!--ce div permet un seul bloc dans cette page-->
+        <header class="partie1">
+                <img src="src/img/jarditou_logo.jpg" width="300" height="80" alt=logoaccueil  title="Logo Jarditou"><!--insertion d'une image dans répertoire avec cheminement depuis le code source, largeur, hauteur. Title est non obligatoire mais important pour la description de l'image, référencement sur les moteurs de recherches et la synthèse vocale. Alt est obligatoire au cas où l'image ne s'affiche pas pour que internaute et moteur de recherche devinent le sens de l'image, fourni également une légende à l'image qui s'ffiche lorsque la souris passe au dessus-->
+                <h2>Tout le jardin</h2><!--2éme taille de caractère en html-->
+        </header>
+        <nav class="partie2">
+                <a href="#pageaccueil" title="alleraccueil">Accueil</a><!--a insère un lien indiqué dans href, # pour lien sur la même page-->
+                <a href="tableau.html">Tableau</a>
+                <a href="contact.html">Contact</a>
+        </nav>
+        <br> <!--saut de ligne-->
+        <nav class="partie3">
+                <img src="src/img/promotion.jpg" width="100%" height="140"  alt=logopromotion  title="Logo Promotion">
+        </nav> 
+        <p id="pageaccueil"></p>  <!--référence pour le lien #pageaccueil au dessus-->    
+        <section class="partie4">
+            <article class="article">
+                <h1><b>ACCUEIL</b></h1>   
+                <br> 
+                <h2><b>L'entreprise</b></h2>
+                <h4>Notre entreprise familiale met tout son savoir-faire à votre disposition dans le domaine du jardin et du paysagisme.</h4>
+                <h4>Créée il y a 70 ans, notre entreprise vend fleurs, arbustes, matériel à main et motorisés.</h4>
+                <h4>Implantés à Amiens, nous intervenons dans tout le département de la Somme : Albert, Doullens, Péronne, Abbeville, Corbie</h4>
+                <h2><b>Qualité</b></h2>
+                <h4>Nous mettons à votre disposition un service personnalisé, avec 1 seul interlocuteur durant tout votre projet.</h4>
+                <h4>Vous serez séduit par notre expertise, nos compétences et notre sérieux.</h4>
+                <h2><b>Devis gratuit</b></h2>
+                <h4>Vous pouvez bien sûr contacter pour de plus amples informations ou pour une demande d’intervention. Vous souhaitez un devis ? Nous vous le réalisons gratuitement.</h4>
+            </article>
+        </section>
+        <footer class="partie5">
+                 <a href="Mentionlégales">Mention légales</a>
+                 <a href="Horaires">Horaires</a>
+                 <a href="Plandusite">Plan du site</a>
+        </footer>      
+    </div>
+</body>
+</html>

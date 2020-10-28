@@ -1,0 +1,8 @@
+/* partie tableau pour mettre les 4 bouton avec espace autour d'eux egal*/
+
+.bouton{
+    display:flex;
+    justify-content:space-around; 
+}
+
+

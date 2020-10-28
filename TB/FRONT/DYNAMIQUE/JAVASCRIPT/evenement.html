@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p onClick="alert('OK')">Clique ici</p>     <!-- directement sur le html-->
+    <p id="button1">Clique-moi</p>              <!-- via le fichier externe get et add-->
+    <p id="button2">Clique-moi</p>              <!-- via le fichier externe queryselector -->
+    <br>
+    <a href="#" onMouseOver="message();">message important</a> <!--survol d'un lien actif ou non lance une fonction ici message-->
+<!--chamgement image par survol-->
+    <br>
+    <br>
+    <img src="images/7.jpg" border="0" width="100" height="100" onMouseOver="this.src='images/8.jpg'"  onMouseOut="this.src='images/7.jpg'">
+    <br>
+    <!-- Exercice affichage nom-->
+    <h1>Saissisez un texte puis pressez le bouton 'Contrôle'</h1>
+    <br>
+    
+        <input type="text" id="input">
+        <button type="submit" id="btn">Contrôler</button>
+    <br>
+    <br>
+
+    <!-- exercice nombre magique -->
+    
+    <div id="label1"></div>
+    <input id="textBox1" value="">
+    <input type="button" id="button3" value="Verifier"> 
+ 
+    <!-- Ajouter onclick="verif();" dans le input button pour execution de ce script-->
+    <!--<script>
+        let input1 = document.getElementById('textBox1');
+        function verif(){
+            
+            let valeur1 = parseFloat(input1.value);
+            valeur2 = Math.random();
+            if (valeur1 > valeur2){
+               window.alert("Trop Grand");
+               label1.innerText = "Trop Grand";
+            }
+            else{
+                window.alert("Trop Petit");
+                label1.innerText = "Trop Petit";
+            }
+        }
+     </script> -->
+
+
+    <script src="js/evenement.js"></script>  
+</body>
+</html>

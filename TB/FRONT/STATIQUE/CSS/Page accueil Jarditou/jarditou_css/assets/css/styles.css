@@ -1,0 +1,66 @@
+body {
+    display: block;
+    margin: 10px; /*marge exterieur du bloc*/
+}
+.partie1{
+    display:flex;
+    flex-direction:row; /*permet une rotation dans l'inverse des aiguiles d'une montre pour mettre sur la même ligne*/
+}
+.partie1 h2{
+    margin-left:225px; /*h2 placé au centre*/
+    }
+.partie2{
+    background-color:#000000; /*couleur du bloc en noir*/
+    height:40px; /*hauteur du bloc*/
+    font-size:10pt; /*taille de la police du bloc*/
+    display:flex;
+    align-items:center;  /*place les element au centre verticalement*/
+    margin-bottom:3px; /*espacement avec la partie 3*/
+    }
+
+.partie3{
+    margin-bottom:10px /*espacement avec la partie 4*/
+}
+.partie4 aside{ /*agit sur la colonne grise*/
+        background:#cccccc; /*colonne couleur grise*/
+        width:210px; /*largeur colonne*/
+        height:650px; /*hauteur colonne*/
+       }
+.partie4{
+    display:flex;
+    flex-direction:row; /*place les elements sur la même ligne*/
+    justify-content:space-between; /*de chaque côté*/
+    margin-bottom:5px   
+}
+.partie5{
+    background-color:#000000;
+    height:40px;
+    font-size:10pt; 
+    display:flex;
+    align-items:center;   
+}
+a{
+    color:#ffffff; /*agit sur les éléments a, police en blanc*/
+    margin-right:5px;  /*espace entre les a*/
+    position: relative; left: 50px; /*marge de droite*/
+}
+@media screen and (max-width:768px) /*adaptabilité aux smartphone ici largeur de l'appareil*/
+{ 
+    html
+        { 
+        font-size:40%; /*réduit la taille du bloc html*/ 
+    } 
+    .aside{
+        display:none; /*colonne disparait en dessous de 768px*/
+    }
+    .partie2{
+        font-size:80%; /*adapte en réduisant encore les a */
+        display:grid; /*place les a l'un en dessous l'autre */
+         }
+    .partie5{
+       font-size:80%; 
+       display:grid; 
+    }
+} 
+
+

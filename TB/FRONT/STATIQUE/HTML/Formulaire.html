@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <p>     *Ces zones sont obligatoires</p>
+    <form action="http://bienvu.net/script.php" method="POST">
+       
+        <fieldset> <p>Vos coordonnées</p>
+        <label for="Nom">Votre nom*:</label><input type="text" name="nom" id="nom" required title="Entrez votre nom"><br>
+        <label for="Prenom">Votre prénom*:</label><input type="text" name="Prenom" id="Prenom" required title="Entrez votre prénom">
+        <p>Sexe*:<input type="radio" name="Sexe" value="Féminin"> Féminin<input type="radio" name="Sexe" value="Masculin" required title="Entrez votre sexe"> Masculin</p>
+        <label for="date">Date de naissance*:</label><input type="text" name="date" id="date" value="jj/mm/aaaa" required title="Entrez votre date de naissance"><br>
+        <label for="code postal*">Code Postal*:</label><input type="text" name="code postal" id="code postal" required title="Entrez votre code postal"><br>
+        <label for="adresse">Adresse:</label><input type="text" name="adresse" id="adresse"><br>
+        <label for="ville">Ville:</label><input type="text" name="ville" id="ville"><br>
+        <label for="email">Email*:</label><input type="text" name="email" id="email" placeholder="dave.loper@afpa.fr" required title="Entrez votre email"><br>
+        </fieldset><br><br>
+
+        <fieldset> <p><b>Votre demande</b>></p>
+            <label for="Sujet">Sujet*:</label>
+            <select id="Sujet"> 
+                <option value="">Veuillez séléctionner un sujet</option>
+                <option value="Mes commandes">Mes commandes</option>
+                <option value="Question sur un produit">Question sur un produit</option>
+                <option value="Réclamations">Réclamations</option>
+                <option value="Autres">Autres</option>
+            </select><br>
+            <p><b>Votre question*: </b><textarea name="commentaire" rows="3" cols="20" required title="question obligatoire"></textarea></p>
+        </fieldset><br>
+        <input type="checkbox" name="acceptation" value="OuiNon" required title=""> *J'accepte le traitement informatique de ce formulaire <br><br>
+        <input type="submit" value="Envoyer">&nbsp;<input type="reset" value="Annuler">
+
+     </form>
+    
+</body>
+</html>

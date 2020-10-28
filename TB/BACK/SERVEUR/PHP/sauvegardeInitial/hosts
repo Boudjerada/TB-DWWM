@@ -1,0 +1,25 @@
+#
+127.0.0.1 localhost
+::1 localhost
+
+127.0.0.1	jarditouLucille
+::1	jarditouLucille
+
+127.0.0.1	lucille
+::1	lucille
+
+127.0.0.1	eval
+::1	eval
+
+127.0.0.1	projet
+::1	projet
+
+127.0.0.1	codeigniter
+::1	codeigniter
+127.0.0.1 eval.test #laragon magic!
+127.0.0.1 jarditou_html_zip.test #laragon magic!
+127.0.0.1 PDO.test #laragon magic!
+127.0.0.1 phpMyAdmin-4.9.1-all-languages.test #laragon magic!
+
+127.0.0.1	www.jarditou.dvp
+::1	www.jarditou.dvp

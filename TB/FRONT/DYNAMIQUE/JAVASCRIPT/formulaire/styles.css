@@ -1,0 +1,13 @@
+.explication{
+    display:flex;
+    flex-direction:row;
+}
+#adresse{
+    display:flex;
+    align-items:center;
+}
+
+.valid{
+    display:flex;
+    justify-content: flex-end ;
+}
